@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&family=Roboto:wght@900&display=swap');
+
+
+body {
+  display: flex;
+   background-image: url(https://images2.alphacoders.com/805/805177.jpg);
+   background-size: 165%;
+}
+
+.titulo {
+  font-family: 'Kanit', sans-serif;
+  font-size: 25px;
+  border-radius: 25px;
+  gap: 6px;
+  margin-left: 28%;
+  margin-top: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 450px;
+  height: 540px;
+}
+
+.Name{
+  color: rgb(255, 255, 255);
+}
+.Email{
+  color: rgb(255, 255, 255);
+}
+.Mensagem{
+  
+  color: rgb(255, 255, 255);
+}
+.button {
+  padding-right: 170px;
+  width: 10vh;
+  display: flex;
+}
+input{
+  height: 4vh;
+  width: 30vh;
+}
+textarea{
+  width: 30vh;
+}
