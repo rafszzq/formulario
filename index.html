@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="titulo">
-    <div class="Name">
-      <table>Nome:</table>
-      <input class="input1" type="text" required placeholder="Digite seu nome:">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="">Choose a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="billing">Billing Question</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    I agree to the terms and conditions
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="formStatus"></div>
     </div>
-    <div class="Email">
-      <table>Email:</table>
-      <input class="input2" type="text" required placeholder="Digite seu email:">
-    </div>
-    <div class="Mensagem">
-      <table>Mensagem:</table>
-      <textarea class="input3" name="" required placeholder="Digite sua mensagem:" cols="30" rows="10"></textarea>
-    </div>
-    <div class="button">
-      <input type="button" value="submit">
-    </div>
-  </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
