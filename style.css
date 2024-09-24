@@ -1,45 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&family=Roboto:wght@900&display=swap');
-
-
 body {
-  display: flex;
-   background-image: url(https://images2.alphacoders.com/805/805177.jpg);
-   background-size: 165%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.titulo {
-  font-family: 'Kanit', sans-serif;
-  font-size: 25px;
-  border-radius: 25px;
-  gap: 6px;
-  margin-left: 28%;
-  margin-top: 20%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 450px;
-  height: 540px;
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.Name{
-  color: rgb(255, 255, 255);
+h1 {
+    text-align: center;
+    color: #333;
 }
-.Email{
-  color: rgb(255, 255, 255);
+
+.form-group {
+    margin-bottom: 1rem;
 }
-.Mensagem{
-  
-  color: rgb(255, 255, 255);
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
 }
-.button {
-  padding-right: 170px;
-  width: 10vh;
-  display: flex;
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
 }
-input{
-  height: 4vh;
-  width: 30vh;
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
 }
-textarea{
-  width: 30vh;
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#formStatus {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
 }
